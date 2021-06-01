@@ -5,4 +5,4 @@ está sendo localizado para uso em sala de aula, no curso de Informática Integr
 ao Ensino Médio, no IFSC Campus Xanxerê.
 
 Para acessar o tutorial veja o repositório Fazer Front é F\*da
-https:maykonchagas.github.io/interneting-is-hard/br/index.html
+https://maykonchagas.github.io/interneting-is-hard/br/index.html
