@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*
+
+*/
+.main {
+    display: flex;
+    min-height: 50vh;
+    flex: 1;
+}
+
+.article {
+    flex: 1;
+    order: 1;
+}
+
+.nav, .aside {
+    flex: 0 0 20vw;
+}
+
+.nav {
+    background-color: #f7bcd8;
+    order: 3;
+}
+
+.aside {
+    background-color: #bbd8f8;
+    order: 2;
+}
+
+.header, .footer {
+    background-color: #66be00;
+    min-height: 25vh;
+}
+
+.header, .article, .nav, .aside, .footer {
+    padding: 1em;
+}
