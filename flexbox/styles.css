@@ -25,6 +25,10 @@
       justify-content: flex-end;
   }
 
+  .signup {
+    margin-left: auto;
+  }
+
   .login {
       margin-left: 20px;
   }
@@ -45,9 +49,10 @@
   }
 
   .social,
-  .logo,
   .subscribe {
-    border: 1px solid #5995DA;
+    align-self: baseline;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .photo-grid-container {
@@ -60,7 +65,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
@@ -68,4 +73,33 @@
     border: 1px solid #fff;
     width: 300px;
     height: 300px;
+  }
+
+  /* Esta ordenação precisa ser declarada também como classe no 
+   nos itens flex do conteiner */
+  .first-item {
+    order: 2;
+  }
+
+  .last-item {
+    order: -1;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;    
+  }
+
+  .footer-item {
+    border: 1px solid #fff;
+    background-color: #D6E9FE;
+    height: 200px;
+    flex: 1;
+  }
+
+  .footer-one,
+  .footer-three {
+    background-color: #5995DA;
+    flex: initial;
+    width: 300px;
   }
