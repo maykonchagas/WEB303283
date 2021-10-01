@@ -25,9 +25,6 @@
     3. Apresentar através do CSS a animação ao pressionar a tecla correspondente
     (analise as propriedades nas classes .key e .playing).
 
-
-
-
 -->
 
     <div class="keys">
@@ -78,5 +75,28 @@
     <audio data-key="74" src="sounds/snare.wav"></audio>
     <audio data-key="75" src="sounds/tom.wav"></audio>
     <audio data-key="76" src="sounds/tink.wav"></audio>
+
+    <script>
+      function playSound(e) {
+        const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+        const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+        if (!audio) return;
+        audio.currentTime = 0;
+        audio.play();
+        key.classList.add("playing");
+      }
+
+      function removeTransition(e) {
+        if (e.propertyName !== "transform") return;
+        this.classList.remove("playing");
+      }
+
+      const keys = document.querySelectorAll(".key");
+      keys.forEach((key) =>
+        key.addEventListener("transitionend", removeTransition)
+      );
+
+      window.addEventListener("keydown", playSound);
+    </script>
   </body>
 </html>
