@@ -11,4 +11,4 @@ do material Fazer Front é Difícil, que está sendo localizado da página
 InternetingIsHard.com e é utilizado no curso de Informática Integrado ao Ensino Médio.
 
 Para acessar o tutorial veja o repositório Fazer Front é F\*da
-(Fazer Front é Difícil)[https://fazerfrontedificil.netlify.app/index.html]
+[Fazer Front é Difícil](https://fazerfrontedificil.netlify.app/index.html)
